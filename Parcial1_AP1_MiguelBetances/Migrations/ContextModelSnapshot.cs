@@ -23,18 +23,14 @@ namespace Parcial1_AP1_MiguelBetances.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("Monto")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Observacion")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Persona")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("MetasId");
